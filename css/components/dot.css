@@ -1,0 +1,9 @@
+.upper-dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background: red;
+    bottom: 20px;
+    left: 94px;
+}

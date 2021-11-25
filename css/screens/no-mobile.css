@@ -1,0 +1,40 @@
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    background: var(--yellow);
+    width: 100vw;
+    height: 100vh;
+    font-size: 32px;
+    /* color: white; */
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+    #no-mobile {
+        display: none;
+    }
+}
+
+.no-mobile__text {
+    width: max-content;
+    position: relative;
+    z-index: -5;
+    /* border-bottom: 10px solid blue; */
+}
+.no-mobile__text::before {
+    /* border: 10px solid blue; */
+    content: ' ';
+    background: 10px lemonchiffon;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 10;
+    height: 0.3em;
+    /* top: -10px; */
+    /* border: blue 1px; */
+}
